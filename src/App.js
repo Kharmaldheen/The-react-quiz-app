@@ -127,7 +127,7 @@ export default function App() {
         {status === "loading" && <Loader />}
         {status === "error" && <Error />}
         {status === "ready" && (
-          <StartScreen numQuestions={numQuestions} dispatch={dispatch} />
+          <StartScreen numQuestions={numQuestions} dispatch={dispatch} highscore={highscore} />
         )}
         {status === "active" && (
           <>
