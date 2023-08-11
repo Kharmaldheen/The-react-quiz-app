@@ -1,7 +1,4 @@
-import { useQuiz } from "../hookes/QuizContext";
-
-function NextButton() {
-  const { dispatch, answer, numQuestions, questionIndex } = useQuiz();
+function NextButton({ dispatch, answer, numQuestions, questionIndex }) {
   if (answer === null) return null;
 
   if (questionIndex < numQuestions - 1)

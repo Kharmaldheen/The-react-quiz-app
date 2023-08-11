@@ -1,8 +1,10 @@
-import { useQuiz } from "../hookes/QuizContext";
-
-function Progress() {
-  const { numQuestions, questionIndex, points, totalPoints, answer } =
-    useQuiz();
+function Progress({
+  questionIndex,
+  numQuestions,
+  points,
+  totalPoints,
+  answer,
+}) {
   return (
     <header className="progress">
       <progress

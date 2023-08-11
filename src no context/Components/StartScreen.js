@@ -1,7 +1,4 @@
-import { useQuiz } from "../hookes/QuizContext";
-
-function StartScreen() {
-  const { numQuestions, dispatch, highscore } = useQuiz();
+function StartScreen({ numQuestions, dispatch, highscore }) {
   return (
     <div className="start">
       <h2>Welcome to the React Quiz</h2>
