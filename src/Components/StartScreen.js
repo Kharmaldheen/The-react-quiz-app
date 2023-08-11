@@ -1,4 +1,4 @@
-import { useQuiz } from "../hookes/QuizContext";
+import { useQuiz } from "../context/hookes/QuizContext";
 
 function StartScreen() {
   const { numQuestions, dispatch, highscore } = useQuiz();

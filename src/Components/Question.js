@@ -1,4 +1,4 @@
-import { useQuiz } from "../hookes/QuizContext";
+import { useQuiz } from "../context/hookes/QuizContext";
 import Option from "./Option";
 function Question() {
   const { questions, questionIndex } = useQuiz();
