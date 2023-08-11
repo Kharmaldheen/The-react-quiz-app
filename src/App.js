@@ -10,7 +10,7 @@ import Progress from "./Components/Progress";
 import FinishedScreen from "./Components/FinishedScreen";
 import Footer from "./Components/Footer";
 import Timer from "./Components/Timer";
-import { useQuiz } from "./hookes/QuizContext";
+import { useQuiz } from "./context/hookes/QuizContext";
 
 export default function App() {
   const { status } = useQuiz();
